@@ -8,8 +8,12 @@ function onGeoOk(position) {
     response.json().then((data) => {
       const city = document.querySelector("#weather span:first-child");
       const weather = document.querySelector("#weather span:last-child");
+      const weatherIcon = document.createElement("img");
+      weatherIcon.src =
+        "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} ${data.weather[0].icon} / ${data.main.temp}`;
+      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      weather.append(weatherIcon);
     })
   );
 }
