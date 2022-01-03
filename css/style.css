@@ -4,10 +4,19 @@
 
 /* Components */
 @import "./components/quotes.css";
+@import "./components/weather.css";
 
 /* Screens */
 @import "./screens/background.css";
 
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hidden {
   visibility: hidden;
 }
