@@ -1,0 +1,38 @@
+.login-form {
+  width: 400px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.login-form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  height: 30px;
+}
+
+.login-form input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+.login-form button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+}
+
+.login-form button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+}

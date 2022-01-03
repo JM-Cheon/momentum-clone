@@ -1,5 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const loginBtn = document.querySelector("#login-form button");
+const loginBtnIcon = document.querySelector("#login-form button > i");
 const greeting = document.querySelector("#greeting");
 const todoForm = document.querySelector("#todo-form");
 const todoList = document.querySelector("#todo-list");
@@ -22,6 +24,16 @@ function paintGreetings(username) {
   todoList.classList.remove(HIDDEN_CLASSNAME);
 }
 
+function onLoginBtnMouseover() {
+  loginBtnIcon.classList.remove("fa-lock");
+  loginBtnIcon.classList.add("fa-unlock");
+}
+
+function onLoginBtnMouseout() {
+  loginBtnIcon.classList.remove("fa-unlock");
+  loginBtnIcon.classList.add("fa-lock");
+}
+
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
@@ -32,3 +44,6 @@ if (savedUsername === null) {
   // show the greeting
   paintGreetings(savedUsername);
 }
+
+loginBtn.addEventListener("mouseover", onLoginBtnMouseover);
+loginBtn.addEventListener("mouseout", onLoginBtnMouseout);

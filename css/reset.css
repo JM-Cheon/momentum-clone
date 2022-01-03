@@ -142,12 +142,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-/* scroll bar : none */
-body {
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}

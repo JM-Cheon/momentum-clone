@@ -5,6 +5,8 @@
 /* Components */
 @import "./components/quotes.css";
 @import "./components/weather.css";
+@import "./components/clock.css";
+@import "./components/greetings.css";
 
 /* Screens */
 @import "./screens/background.css";
@@ -16,6 +18,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .hidden {
   visibility: hidden;
