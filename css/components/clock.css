@@ -2,7 +2,7 @@
   font-weight: 600;
   font-size: 150px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--dark-grey);
   height: 200px;
   width: 650px;
   border-radius: 100px;
